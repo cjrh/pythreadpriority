@@ -1,0 +1,13 @@
+[package]
+name = "pythreadpriority"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[lib]
+name = "pythreadpriority"
+crate-type = ["cdylib"]
+
+[dependencies]
+pyo3 = { version = "0.16.3", features = ["extension-module"] }
+thread-priority = "0.8.2"
